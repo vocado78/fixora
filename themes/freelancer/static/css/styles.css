@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 375px;
+  margin: 0 auto;
+  border: 1px solid blue;
+  /* padding: 0 15px; */
+}
+
+.navbar {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 35px;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu > li {
+  padding: 0 15px;
+}
+
+.hero-content {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  padding: 25px 35px;
+  align-items: flex-start;
+}
+
+.about-row {
+  display: flex;
+  justify-content: center;
+  margin: 15px -15px 0;
+}
+
+.about-row-item {
+  margin: 0 15px;
+}
+
+.services-row, .team-row, .contact-row {
+  display: flex;
+  justify-content: center;
+  margin: 15px -20px 0;
+}
+
+.services-row-item, .team-row-item {
+  margin: 0 20px;
+}
+
+.photo-wrapper {
+  width: 400px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.contact-info {
+  margin: 0 20px;
+  flex-grow: 1; 
+}
+
+.contact-form {
+  margin: 0 20px;
+  flex-grow: 2;
+}
+
+
+

@@ -1,0 +1,36 @@
+baseURL = "/"
+languageCode = "sv-se"
+title = "Fixora"
+theme = "freelancer"
+
+# Project specific params
+[params]
+  description = "Här ska det finnas en kort beskrivning som sammanfattar vad Fixora är och gör. Som en förlängning av taglinen."
+  author = "The Author"
+  tagline = "En superbra tagline som fångar intresse"
+
+# Main menu
+[menu]
+  [[menu.main]]
+    identifier = "om"
+    name = "Om oss"
+    url = "#om"
+    weight = 100
+
+  [[menu.main]]
+    identifier = "tjanster"
+    name = "Tjänster"
+    url = "#tjanster"
+    weight = 110
+  
+  [[menu.main]]
+    identifier = "teamet"
+    name = "Teamet"
+    url = "#teamet"
+    weight = 120
+
+  [[menu.main]]
+    identifier = "kontakt"
+    name = "Kontakt"
+    url = "#kontakt"
+    weight = 130

@@ -1,0 +1,16 @@
+<nav role="navigation">
+  <div class="container navbar">
+    <div class="logo">
+      <a class="" href="/">
+        {{ .Site.Title }}
+      </a>
+    </div>
+    <ul class="menu">
+      {{ range .Site.Menus.main }}
+      <li class="">
+        <a class="" href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>

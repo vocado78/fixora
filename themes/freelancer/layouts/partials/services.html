@@ -1,0 +1,10 @@
+<section id="tjanster">
+  <div class="container section">
+    {{ with .Site.GetPage "tjanster.md" }}
+    <h2>{{ .Title }}</h2>
+    <div class="services-row">
+      {{ .Content }}
+    </div>
+    {{ end }}
+  </div>
+</section>

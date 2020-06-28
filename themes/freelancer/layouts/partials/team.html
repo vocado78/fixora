@@ -1,0 +1,17 @@
+<section id="teamet">
+  <div class="container section">
+    <h2>Teamet</h2>
+    <div class="team-row">
+      {{ with .Site.GetPage "team.md" }}
+      <div class="team-row-item">
+        <div class="photo-wrapper">
+          <img src="" alt="porträttfoto" />
+        </div>
+      </div>
+      <div class="team-row-item">
+        {{ .Content }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
