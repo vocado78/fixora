@@ -1,0 +1,7 @@
+# production
+/build
+
+# misc
+.DS_Store
+/themes/.DS_Store
+/themes/freelancer/.DS_Store
