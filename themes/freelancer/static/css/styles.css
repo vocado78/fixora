@@ -8,6 +8,29 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  padding-top: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
 ul {
   list-style-type: none;
 }
@@ -23,22 +46,23 @@ a {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid blue;
-  padding: 20px 15px;
+  padding: 1.25rem 1rem;
 }
 
 .section {
   align-items: flex-start;
+  /* except nav, hero and footer */
+  padding: 5rem 1rem;
 }
 
 .content-row {
   display: flex;
   justify-content: center;
-  margin: 15px -15px 0;
+  margin: 1rem -1rem 0;
 }
 
 .content-row-item {
-  margin: 0 15px;
+  margin: 0 1rem;
 }
 
 .full {
@@ -60,7 +84,7 @@ a {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -70,11 +94,11 @@ a {
 }
 
 .menu > li {
-  padding: 0 15px;
+  padding: 0 1rem;
 }
 
 .hero-content {
-  height: 350px;
+  height: 22rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,11 +107,19 @@ a {
 }
 
 /* --------------------
+        Services
+---------------------*/
+.card {
+  padding: 0.75rem 1.5rem;
+  background-color:#fff;
+  box-shadow: 0 2px 1px hsl(39, 7%, 83%);
+}
+/* --------------------
         Team
 ---------------------*/
 .photo-wrapper {
-  width: 400px;
-  height: 200px;
+  width: 24rem;
+  height: 12rem;
   border: 1px solid red;
 }
 
@@ -100,19 +132,19 @@ a {
 
 .form-row {
   display: flex;
-  margin: 0 -15px;
+  margin: 0 -1rem;
 }
 
 .form-group {
   width: 50%;
-  margin-bottom: 15px;
-  padding: 0 15px;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
 }
 
 input[type = text], input[type = email], textarea {
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
   color: #555;
   border: 1px solid #ccc;
 }
@@ -123,7 +155,15 @@ input[type = text], input[type = email], textarea {
   flex-direction: column;
   justify-content: space-between;
   /* height of form without submit btn */
-  height: 145px;
+  height: 9rem;
+}
+
+
+/* --------------------
+        Footer
+---------------------*/
+footer {
+  background-color: #2e2e2d;
 }
 
 /* --------------------
