@@ -83,11 +83,6 @@ a {
   background-color: #fff;
 }
 
-.logo {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
 .menu {
   display: flex;
   justify-content: space-between;
