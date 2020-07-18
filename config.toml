@@ -7,7 +7,7 @@ theme = "freelancer"
 [params]
   description = "Här ska det finnas en kort beskrivning som sammanfattar vad Fixora är och gör. Som en förlängning av taglinen."
   author = "The Author"
-  tagline = "En superbra tagline som fångar intresse"
+  tagline = "För effektiva bostadsprojekt"
   logoPath = "assets/logo-v1.svg"
 
 # Main menu
