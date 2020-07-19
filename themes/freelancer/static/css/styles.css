@@ -9,11 +9,12 @@
 
 :root {
   --primary-color: hsl(236, 65%, 45%);
+  --accent-color: hsl(236, 100%, 90%);
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 25%);
 }
 
 h1, h2, h3 {
@@ -65,17 +66,18 @@ a {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding: 1.25rem 1rem;
+  padding: 1.25rem 2rem;
 }
 
 .section {
   align-items: flex-start;
   /* except nav, hero and footer */
-  padding: 5rem 1rem;
+  padding: 5rem 2rem;
 }
 
 .content-row {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0 -1rem;
 }
@@ -154,7 +156,7 @@ a {
 
 .hero-image {
   clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
-  background-color: hsl(231, 90%, 90%);
+  background-color: var(--accent-color);
   position: absolute;
   top: 0;
   right: 0;
@@ -192,6 +194,37 @@ a {
   padding: 0.75rem 1.5rem;
   background-color:#fff;
   box-shadow: 0 2px 1px hsl(39, 7%, 83%);
+  margin-bottom: 2rem;
+}
+
+.service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+#tjanster span {
+ position: relative;
+ color: hsl(0, 0%, 0%);
+}
+
+#tjanster a:hover .card span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+#tjanster span::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: var(--accent-color);
 }
 /* --------------------
         Team
@@ -285,6 +318,12 @@ footer {
 @media screen and (min-width: 768px) {
   .container {
     width: 750px;
+    padding: 1.25rem 1rem;
+  }
+  
+  .section {
+    /* except nav, hero and footer */
+    padding: 5rem 1rem;
   }
 
   .hero-content {
@@ -299,6 +338,14 @@ footer {
     bottom: 1rem;
     width: 442.5px;
     height: 288px;
+  }
+
+  .content-row {
+    flex-direction: row;
+  }
+
+  .card {
+    margin-bottom: 0;
   }
 }
 
@@ -322,7 +369,7 @@ footer {
     flex-direction: row;
   }
 
-  .contact-form {
+  .contact-form, #kontakt p {
     width: 64%;
     margin-right: auto;
   }
