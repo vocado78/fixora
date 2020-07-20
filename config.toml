@@ -7,15 +7,15 @@ theme = "freelancer"
 [params]
   description = "Här ska det finnas en kort beskrivning som sammanfattar vad Fixora är och gör. Som en förlängning av taglinen."
   author = "The Author"
-  tagline = "För effektiva bostadsprojekt"
+  tagline = "Effektiva fastighetsprojekt för hållbar tillväxt"
   logoPath = "assets/logo-v1.svg"
 
 # Main menu
 [menu]
   [[menu.main]]
-    identifier = "om"
-    name = "Om oss"
-    url = "#om"
+    identifier = "intro"
+    name = "Intro"
+    url = "#intro"
     weight = 100
 
   [[menu.main]]
@@ -25,9 +25,9 @@ theme = "freelancer"
     weight = 110
   
   [[menu.main]]
-    identifier = "teamet"
-    name = "Teamet"
-    url = "#teamet"
+    identifier = "om"
+    name = "Om mig"
+    url = "#om"
     weight = 120
 
   [[menu.main]]
