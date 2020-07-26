@@ -16,19 +16,18 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 35%);
 }
 
 h1, h2, h3 {
   font-weight: normal;
   padding-top: 0.75rem;
   padding-bottom: 1rem;
-  color: hsl(0, 0%, 35%);
+  color: hsl(0, 0%, 25%);
 }
 
 h1 {
   font-size: 2.25rem;
-  color: inherit;
 }
 
 h2 {
@@ -117,12 +116,12 @@ a {
 
 .btn-secondary {
   background-color: transparent;
-  color: hsl(0, 0%, 100%);
-  border: 2px solid hsl(0, 0%, 100%);
+  color: var(--contact-text-color);
+  border: 2px solid var(--contact-text-color);
 }
 
 .btn-secondary:hover {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--contact-text-color);
   color: var(--primary-darker);
 }
 
@@ -145,8 +144,7 @@ a {
 .navbar {
   flex-direction: row;
   justify-content: space-between;
-  background-color: #fff;
-  padding: 0.75rem 1rem;
+  padding: 0 2rem;
 }
 
 .menu {
@@ -154,9 +152,13 @@ a {
   justify-content: space-between;
 }
 
-.menu > li {
-  padding: 0 1rem;
+.menu-item {
+  padding: 2rem 1rem;
   text-transform: uppercase;
+}
+
+.menu-item:hover {
+  color: var(--primary-color);
 }
 
 /* --------------------
@@ -264,7 +266,7 @@ a {
 }
 
 #kontakt h2 {
-  color: hsl(236, 45%, 85%);
+  color: inherit;
 }
 
 #kontakt .h2-underline {
@@ -274,6 +276,10 @@ a {
 
 #kontakt p {
   margin-bottom: 2.5rem;
+  color: hsl(236, 45%, 85%);
+}
+
+#kontakt label {
   color: hsl(236, 45%, 85%);
 }
 
@@ -374,7 +380,7 @@ footer {
   }
 
   .navbar {
-    padding: 0.75rem 1rem;
+    padding: 0 1rem;
   }
 
   .hero-content {
