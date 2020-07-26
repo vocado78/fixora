@@ -23,10 +23,12 @@ h1, h2, h3 {
   font-weight: normal;
   padding-top: 0.75rem;
   padding-bottom: 1rem;
+  color: hsl(0, 0%, 40%);
 }
 
 h1 {
   font-size: 2.25rem;
+  color: inherit;
 }
 
 h2 {
@@ -105,7 +107,7 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(hsl(216, 85%, 45%), hsl(236, 85%, 45%));
+  background: linear-gradient(hsl(206, 85%, 45%), hsl(236, 85%, 45%));
   color: #fff;
 }
 
@@ -223,12 +225,11 @@ a {
 
 #tjanster span {
  position: relative;
- color: hsl(0, 0%, 0%);
+ font-weight: 600;
 }
 
 #tjanster a:hover .card span {
   color: var(--primary-color);
-  font-weight: 600;
 }
 
 #tjanster span::after, .contact-link::after {
@@ -253,8 +254,12 @@ a {
         Contact
 ---------------------*/
 #kontakt {
-  background: linear-gradient(hsl(216, 85%, 45%), hsl(236, 85%, 45%));
+  background-color: var(--primary-color);
   color: var(--contact-text-color);
+}
+
+#kontakt h2 {
+  color: hsl(236, 45%, 85%);
 }
 
 #kontakt .h2-underline {
@@ -264,6 +269,7 @@ a {
 
 #kontakt p {
   margin-bottom: 2.5rem;
+  color: hsl(236, 45%, 85%);
 }
 
 .contact-link {
