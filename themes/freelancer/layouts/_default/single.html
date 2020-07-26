@@ -1,8 +1,15 @@
 {{ define "main" }}
 <section>
-  <div class="container">
-    <h2>{{ .Title }}</h2>
-    <div>{{ .Content }}</div>
+  <div class="container single-page">
+    <div class="single-text">
+      <h1>{{ .Title }}</h1>
+      <div class="h2-underline"></div>
+      {{ .Content }}
+    </div>
+    <div class="single-pattern-container">
+      <div class="single-pattern"></div>
+      <div class="single-pattern flipped"></div>
+    </div>
   </div>
 </section>
 {{ end }}
