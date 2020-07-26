@@ -10,6 +10,8 @@
 :root {
   --primary-color: hsl(236, 65%, 45%);
   --accent-color: hsl(236, 100%, 90%);
+  --contact-text-color: hsl(216, 45%, 95%);
+  --primary-darker: hsl(236, 85%, 30%);
 }
 
 body {
@@ -79,11 +81,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 -1rem;
+  margin: 0 -1.5rem;
 }
 
 .content-row-item {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 }
 
 .full {
@@ -99,24 +101,35 @@ a {
   letter-spacing: 0.05em;
   padding: 0.5rem 0.75rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .btn-primary {
   background: linear-gradient(hsl(216, 85%, 45%), hsl(236, 85%, 45%));
   color: #fff;
-  cursor: pointer;
 }
 
 .btn-primary:hover {
-  background: hsl(236, 85%, 30%);
+  background: var(--primary-darker);
 }
 
 .btn-secondary {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+.btn-secondary:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: var(--primary-darker);
+}
+
+.btn-tertiary {
   background-color: hsl(0, 0%, 90%);
   color: inherit;
 }
 
-.btn-secondary:hover {
+.btn-tertiary:hover {
   background-color: hsl(0, 0%, 75%);
 }
 
@@ -218,7 +231,7 @@ a {
   font-weight: 600;
 }
 
-#tjanster span::after {
+#tjanster span::after, .contact-link::after {
   content: '';
   position: absolute;
   bottom: 2px;
@@ -228,11 +241,11 @@ a {
   background-color: var(--accent-color);
 }
 /* --------------------
-        Team
+        About
 ---------------------*/
 .photo-wrapper {
-  width: 24rem;
-  height: 12rem;
+  width: 18rem;
+  height: 20rem;
   border: 1px solid red;
 }
 
@@ -240,22 +253,27 @@ a {
         Contact
 ---------------------*/
 #kontakt {
-  background-color: hsl(39, 21%, 95%);
-  color: hsl(38, 22%, 20%);
+  background: linear-gradient(hsl(216, 85%, 45%), hsl(236, 85%, 45%));
+  color: var(--contact-text-color);
 }
 
 #kontakt .h2-underline {
   margin-bottom: 1.5rem;
+  background-color: var(--contact-text-color);
 }
 
 #kontakt p {
   margin-bottom: 2.5rem;
 }
 
+.contact-link {
+  position: relative;
+}
+
 .contact-row {
   display: flex;
   flex-direction: column;
-  margin: 0 -1rem;
+  margin: 0 -1.5rem;
 }
 
 .form-row {
@@ -269,9 +287,9 @@ input[type = text], input[type = email], textarea {
   font-size: 0.875rem;
   line-height: 1.5;
   border: none;
-  box-shadow: inset 0 2px 2px hsla(39, 21%, 10%, 0.1), 0 2px 0 hsla(39, 21%, 100%, 0.8);
+  box-shadow: inset 0 2px 2px hsla(216, 45%, 20%, 0.4), 0 2px 1px hsla(0, 0%, 100%, 1);
   margin: 0.25rem 0 1rem;
-  background-color: hsl(39, 21%, 85%);
+  background-color: var(--contact-text-color);
 }
 
 textarea {
@@ -279,13 +297,12 @@ textarea {
 }
 
 input:focus, textarea:focus {
-  outline: solid hsl(0, 0%, 20%) 2px;
+  outline: none;
 }
 
 .contact-form button {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  border: none;
   margin-top: 0.5rem;
 }
 
