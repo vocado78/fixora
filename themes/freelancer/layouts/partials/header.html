@@ -4,8 +4,8 @@
       <h1>{{ .Site.Params.tagline }}</h1>
       <p>{{ .Site.Params.description }}</p>
       <div>
-        <a href="#om" class="btn btn-primary">Läs mer</a>
-        <a href="#kontakt" class="btn btn-tertiary">Förfrågan</a>
+        <a href="#om" class="btn btn-primary">{{ .Site.Params.primaryAction }}</a>
+        <a href="#kontakt" class="btn btn-tertiary">{{ .Site.Params.secondaryAction }}</a>
       </div>
     </div>
     <div class="hero-image">

@@ -5,12 +5,30 @@ theme = "freelancer"
 
 # Project specific params
 [params]
-  description = "Här ska det finnas en kort beskrivning som sammanfattar vad Fixora är och gör. Som en förlängning av taglinen."
-  author = "The Author"
-  tagline = "Effektiva fastighetsprojekt för hållbar tillväxt"
+# Hemsidans topp
   logoPath = "assets/logo-v1.svg"
+  tagline = "Effektiva fastighetsprojekt för hållbar tillväxt"
+  description = "Här ska det finnas en kort beskrivning som sammanfattar vad Fixora är och gör. Som en förlängning av taglinen."
+  primaryAction = "Läs mer"
+  secondaryAction = "Förfrågan"
 
-# Main menu
+# Kontakt
+  contactHeader = "Kontakt"
+  contactSubHeader = "Använd formuläret nedan för att skicka en förfrågan, eller ring eller mejla för mer information."
+  formLabelName = "Namn"
+  formLabelEmail = "E-post"
+  formLabelMessage = "Meddelande"
+  formAction = "Skicka"
+  location = "Landskrona"
+  contactEmail = "info@fixora.se"
+  contactPhone = "070 123 45 67"
+  linkedIn = "linkedin.com/in/jennyhedelin"
+
+# Footer
+  author = "Fixora"
+  year = "2020"
+
+# Navigering
 [menu]
 [[menu.main]]
     identifier = "hem"
