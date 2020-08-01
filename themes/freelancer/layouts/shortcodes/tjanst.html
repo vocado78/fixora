@@ -1,6 +1,10 @@
-<div class="content-row-item card">
-  <img src="{{ .Get "src" }}" alt="icon" />
-  <h3>{{ .Get "title" }}</h3>
-  <p>{{ .Inner }}</p>
-  <a href="tjanster/{{ (.Get "urlTitle") }}">Läs mer</a>
-</div>
+<a href="tjanster/{{ (.Get "urlTitle") }}">
+  <div class="content-row-item card">
+    <div class="service-icon">
+      <img src="{{ .Get "src" }}" alt="icon" />
+    </div>
+    <h3>{{ .Get "title" }}</h3>
+    <p>{{ .Inner }}</p>
+    <span>{{ .Site.Params.primaryAction }}</span>
+  </div>
+</a>

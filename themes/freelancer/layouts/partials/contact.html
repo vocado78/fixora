@@ -1,43 +1,44 @@
-<section id="kontakt" style="background-color: hsl(39, 21%, 95%);">
+<section id="kontakt">
   <div class="container section">
-    <h2>Kontakt</h2>
-    <p>Använd formuläret nedan för att skicka en förfrågan, eller ring eller mejla för mer information.</p>
+    <h2>{{ .Site.Params.contactHeader }}</h2>
+    <div class="h2-underline"></div>
+    <p>{{ .Site.Params.contactSubHeader }}</p>
     <div class="contact-row full">
 
       <div class="content-row-item contact-form">
         <form name="kontakt" id="kontaktform" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Namn</label>
+              <label for="name">{{ .Site.Params.formLabelName }}</label>
               <input type="text" id="name" name="name" class="full" required="required">
             </div>
             <div class="form-group">
-              <label for="email">E-post</label>
+              <label for="email">{{ .Site.Params.formLabelEmail }}</label>
               <input type="email" id="email" name="email" class="full" required="required">
             </div>
           </div>
-          <label for="message">Meddelande</label>
+          <label for="message">{{ .Site.Params.formLabelMessage }}</label>
           <textarea name="message" id="message" class="full" rows="5" required></textarea>
-          <button type="submit" class="btn btn-primary">Skicka</button>
+          <button type="submit" class="btn btn-secondary">{{ .Site.Params.formAction }}</button>
         </form>
       </div>
 
       <ul class="content-row-item contact-info">
         <li class="contact-item">
           <img src="assets/location.svg" alt="Platssymbol" />
-          Landskrona
+          {{ .Site.Params.location }}
         </li>
         <li class="contact-item">
           <img src="assets/envelope.svg" alt="E-postsymbol" />
-          <a href="mailto:info@fixora.se">info@fixora.se</a>
+          <a href="mailto:info@fixora.se">{{ .Site.Params.contactEmail }}</a>
         </li>
         <li class="contact-item">
           <img src="assets/phone.svg" alt="Telefonsymbol" />
-          070 123 45 67
+          {{ .Site.Params.contactPhone }}
         </li>
         <li class="contact-item">
           <img src="assets/linkedin.svg" alt="LinkedInsymbol" />
-          <a href="#" target="_blank" rel="noopener">Hitta mig på LinkedIn</a>
+          <a href="https://www.linkedin.com/in/jennyhedelin/" target="_blank" rel="noopener" class="contact-link">{{ .Site.Params.linkedIn }}</a>
         </li>
       </ul>
     </div>

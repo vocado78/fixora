@@ -1,14 +1,14 @@
-<nav role="navigation">
+<nav id="navigation" role="navigation">
   <div class="container navbar">
     <div class="logo">
-      <a class="" href="/">
+      <a href="/">
         <img src="{{ .Site.Params.logoPath }}" alt="Logo" />
       </a>
     </div>
     <ul class="menu">
       {{ range .Site.Menus.main }}
-      <li class="">
-        <a class="" href="{{ .URL }}">{{ .Name }}</a>
+      <li class="menu-item">
+        <a href="{{ .URL }}">{{ .Name }}</a>
       </li>
       {{ end }}
     </ul>
