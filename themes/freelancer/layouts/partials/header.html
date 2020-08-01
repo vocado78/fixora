@@ -1,12 +1,15 @@
 <section>
-  <div class="container">
-    <div class="hero-content">
+  <div class="hero-container">
+    <div class="container hero-content">
       <h1>{{ .Site.Params.tagline }}</h1>
       <p>{{ .Site.Params.description }}</p>
-      <div class="hero-actions">
-        <a href="/">Läs mer</a>
-        <a href="#kontakt">Förfrågan</a>
+      <div>
+        <a href="#om" class="btn btn-primary">{{ .Site.Params.primaryAction }}</a>
+        <a href="#kontakt" class="btn btn-tertiary">{{ .Site.Params.secondaryAction }}</a>
       </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/progress-data-illustration.svg" alt="Progress illustration" />
     </div>
   </div>
 </section>

@@ -1,30 +1,46 @@
 <section id="kontakt">
   <div class="container section">
-    <h2>Kontakta oss</h2>
-    <p>Ring eller mejla oss för mer information, eller använd formuläret nedan för att skicka en förfrågan.</p>
-    <div class="contact-row">
-      <div class="contact-info">
-        <h3>Kontaktuppgifter</h3>
-        <p>Långgatan 123<br>
-          123 45 Staden</p>
-        <p>info@company.com</p>
-        <p>070 123 45 67</p>
-      </div>
-      <div class="contact-form">
-        <h3>Skicka en förfrågan</h3>
+    <h2>{{ .Site.Params.contactHeader }}</h2>
+    <div class="h2-underline"></div>
+    <p>{{ .Site.Params.contactSubHeader }}</p>
+    <div class="contact-row full">
+
+      <div class="content-row-item contact-form">
         <form name="kontakt" id="kontaktform" novalidate>
-          <div class="form-group">
-            <input type="text" id="name" class="form-control" placeholder="Namn" required="required">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">{{ .Site.Params.formLabelName }}</label>
+              <input type="text" id="name" name="name" class="full" required="required">
+            </div>
+            <div class="form-group">
+              <label for="email">{{ .Site.Params.formLabelEmail }}</label>
+              <input type="email" id="email" name="email" class="full" required="required">
+            </div>
           </div>
-          <div class="form-group">
-            <input type="email" id="email" class="form-control" placeholder="E-post" required="required">
-          </div>
-          <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Meddelande" required></textarea>
-          </div>
-          <button type="submit" class="btn-primary">Skicka</button>
+          <label for="message">{{ .Site.Params.formLabelMessage }}</label>
+          <textarea name="message" id="message" class="full" rows="5" required></textarea>
+          <button type="submit" class="btn btn-secondary">{{ .Site.Params.formAction }}</button>
         </form>
       </div>
+
+      <ul class="content-row-item contact-info">
+        <li class="contact-item">
+          <img src="assets/location.svg" alt="Platssymbol" />
+          {{ .Site.Params.location }}
+        </li>
+        <li class="contact-item">
+          <img src="assets/envelope.svg" alt="E-postsymbol" />
+          <a href="mailto:info@fixora.se">{{ .Site.Params.contactEmail }}</a>
+        </li>
+        <li class="contact-item">
+          <img src="assets/phone.svg" alt="Telefonsymbol" />
+          {{ .Site.Params.contactPhone }}
+        </li>
+        <li class="contact-item">
+          <img src="assets/linkedin.svg" alt="LinkedInsymbol" />
+          <a href="https://www.linkedin.com/in/jennyhedelin/" target="_blank" rel="noopener" class="contact-link">{{ .Site.Params.linkedIn }}</a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

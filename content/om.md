@@ -1,15 +1,15 @@
 +++
-title = "Om Fixora"
+title = "Om mig"
 +++
 
-{{< om-paragraf title="Vad är Fixora?" >}}
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter somnus, fortius ante ille.
+{{< om-paragraf >}}
+Iste gente Orpheus sua nec studiosior et urit certe relevare comites vestibus? Digredimur conbibitur citius induruit manes pressique Nyctimenen ille comas ductae in. Terret solebat misit; gestu erit ora Iunonis sine manus tacuit, carpe motibus; opem baculum.
+
+Augusta exstinctus dempto repperit ut quati enim. Quae illo sine fatorum. Sub ut Hyadasque specus terraeque coniunx vix. Voce addita est haec. Stagnum pavido sanguine Priamo custodia sed.
 {{< /om-paragraf  >}}
 
-{{< om-paragraf title="Vad gör Fixora?" >}}
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter somnus, fortius ante ille.
-{{< /om-paragraf  >}}
+{{< om-paragraf >}}
+Iste gente Orpheus sua nec studiosior et urit certe relevare comites vestibus? Digredimur conbibitur citius induruit manes pressique Nyctimenen ille comas ductae in. Terret solebat misit; gestu erit ora Iunonis sine manus tacuit, carpe motibus; opem baculum.
 
-{{< om-paragraf title="Varför Fixora?" >}}
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter somnus, fortius ante ille.
+Augusta exstinctus dempto repperit ut quati enim. Quae illo sine fatorum. Sub ut Hyadasque specus terraeque coniunx vix. Voce addita est haec. Stagnum pavido sanguine Priamo custodia sed.
 {{< /om-paragraf  >}}
