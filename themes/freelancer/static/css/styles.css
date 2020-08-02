@@ -80,13 +80,14 @@ a {
 
 .content-row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 -1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -1rem;
+  width: 100%;
 }
 
 .content-row-item {
-  margin: 0 1.5rem;
+  margin: 0 1rem;
 }
 
 .full {
@@ -207,6 +208,15 @@ a {
 }
 
 /* --------------------
+        Intro
+---------------------*/
+.intro-item {
+  width: 207px;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+
+/* --------------------
         Services
 ---------------------*/
 #tjanster {
@@ -217,7 +227,10 @@ a {
   padding: 0.75rem 1.5rem;
   background-color:#fff;
   box-shadow: 0 2px 1px hsl(39, 7%, 83%);
-  margin-bottom: 2rem;
+  width: 320px;
+  max-width: 100%;
+  flex: 1 1 auto;
+  margin: 0 1rem 2rem;
 }
 
 .service-icon {
@@ -230,16 +243,16 @@ a {
   border-radius: 50%;
 }
 
-#tjanster span {
+.card span {
  position: relative;
  font-weight: 600;
 }
 
-#tjanster a:hover .card span {
+.card:hover span {
   color: var(--primary-color);
 }
 
-#tjanster span::after, .contact-link::after {
+.card span::after, .contact-link::after {
   content: '';
   position: absolute;
   bottom: 2px;
@@ -251,8 +264,14 @@ a {
 /* --------------------
         About
 ---------------------*/
+.about-item {
+  width: 280px;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+
 .photo-wrapper {
-  width: 18rem;
+  width: 100%;
   height: 20rem;
   border: 1px solid red;
 }
@@ -289,8 +308,10 @@ a {
 
 .contact-row {
   display: flex;
-  flex-direction: column;
-  margin: 0 -1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 -1rem;
 }
 
 .form-row {
@@ -315,6 +336,12 @@ textarea {
 
 input:focus, textarea:focus {
   outline: none;
+}
+
+.contact-form, #kontakt p {
+  width: 590px;
+  max-width: 700px;
+  flex: 1 1 auto;
 }
 
 .contact-form button {
@@ -397,12 +424,18 @@ footer {
     height: 288px;
   }
 
-  .content-row {
-    flex-direction: row;
+  .card {
+    margin: 0 1rem;
   }
 
-  .card {
-    margin-bottom: 0;
+  .form-row {
+    flex-direction: row;
+    margin: 0 -1rem;
+  }
+
+  .form-group {
+    width: 50%;
+    padding: 0 1rem;
   }
 
   .single-page {
@@ -426,28 +459,8 @@ footer {
     bottom: 4rem;
   }
 
-  .contact-row {
-    flex-direction: row;
-  }
-
-  .contact-form, #kontakt p {
-    width: 64%;
-    margin-right: auto;
-  }
-
-  .form-row {
-    flex-direction: row;
-    margin: 0 -1rem;
-  }
-
-  .form-group {
-    width: 50%;
-    padding: 0 1rem;
-  }
-
   .contact-info {
     margin-top: 1.5rem;
-    width: 25%;
   }
 
   .single-page {
