@@ -211,7 +211,7 @@ a {
         Intro
 ---------------------*/
 .intro-item {
-  width: 207px;
+  width: 13rem;
   max-width: 100%;
   flex: 1 1 auto;
 }
@@ -224,13 +224,18 @@ a {
 }
 
 .card {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.5rem 2.5rem;
   background-color:#fff;
   box-shadow: 0 2px 1px hsl(39, 7%, 83%);
-  width: 320px;
+  width: 20rem;
   max-width: 100%;
   flex: 1 1 auto;
   margin: 0 1rem 2rem;
+}
+
+.card-heading {
+  display: flex;
+  align-items: baseline;
 }
 
 .service-icon {
@@ -241,6 +246,7 @@ a {
   height: 2.5rem;
   background-color: var(--primary-color);
   border-radius: 50%;
+  margin: 1rem 1rem 0 0;
 }
 
 .card span {
@@ -265,7 +271,7 @@ a {
         About
 ---------------------*/
 .about-item {
-  width: 280px;
+  width: 17.5rem;
   max-width: 100%;
   flex: 1 1 auto;
 }
@@ -339,7 +345,7 @@ input:focus, textarea:focus {
 }
 
 .contact-form, #kontakt p {
-  width: 590px;
+  width: 36rem;
   max-width: 700px;
   flex: 1 1 auto;
 }
@@ -372,6 +378,11 @@ input:focus, textarea:focus {
 ---------------------*/
 footer {
   background-color: #2e2e2d;
+}
+
+footer p {
+  margin-bottom: 0;
+  color: hsl(0, 0%, 55%);
 }
 
 /* --------------------
