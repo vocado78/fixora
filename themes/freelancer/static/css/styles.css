@@ -23,23 +23,23 @@ h1, h2, h3 {
   font-weight: normal;
   padding-top: 0.75rem;
   padding-bottom: 1rem;
-  color: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 20%);
 }
 
 h1 {
   font-size: 2.25rem;
 }
 
-h2 {
-  font-size: 1.75rem;
-}
-
-h3 {
+h3, .single-text h2 {
   display: inline-block;
   font-size: 1.25rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--primary-color);
   margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
 }
 
 p {
@@ -80,13 +80,14 @@ a {
 
 .content-row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 -1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -1rem;
+  width: 100%;
 }
 
 .content-row-item {
-  margin: 0 1.5rem;
+  margin: 0 1rem;
 }
 
 .full {
@@ -165,9 +166,10 @@ a {
         Hero
 ---------------------*/
 .hero-container {
+  display: flex;
+  align-items: center;
   height: 80vh;
   position: relative;
-  padding-top: 1rem;
 }
 
 .hero-container h1 {
@@ -207,6 +209,15 @@ a {
 }
 
 /* --------------------
+        Intro
+---------------------*/
+.intro-item {
+  width: 13rem;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+
+/* --------------------
         Services
 ---------------------*/
 #tjanster {
@@ -214,10 +225,18 @@ a {
 }
 
 .card {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.5rem 2.5rem;
   background-color:#fff;
   box-shadow: 0 2px 1px hsl(39, 7%, 83%);
-  margin-bottom: 2rem;
+  width: 20rem;
+  max-width: 100%;
+  flex: 1 1 auto;
+  margin: 0 1rem 2rem;
+}
+
+.card-heading {
+  display: flex;
+  align-items: baseline;
 }
 
 .service-icon {
@@ -228,18 +247,19 @@ a {
   height: 2.5rem;
   background-color: var(--primary-color);
   border-radius: 50%;
+  margin: 1rem 1rem 0 0;
 }
 
-#tjanster span {
+.card span {
  position: relative;
  font-weight: 600;
 }
 
-#tjanster a:hover .card span {
+.card:hover span {
   color: var(--primary-color);
 }
 
-#tjanster span::after, .contact-link::after {
+.card span::after, .contact-link::after {
   content: '';
   position: absolute;
   bottom: 2px;
@@ -251,8 +271,14 @@ a {
 /* --------------------
         About
 ---------------------*/
+.about-item {
+  width: 17.5rem;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+
 .photo-wrapper {
-  width: 18rem;
+  width: 100%;
   height: 20rem;
   border: 1px solid red;
 }
@@ -289,8 +315,10 @@ a {
 
 .contact-row {
   display: flex;
-  flex-direction: column;
-  margin: 0 -1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 -1rem;
 }
 
 .form-row {
@@ -315,6 +343,12 @@ textarea {
 
 input:focus, textarea:focus {
   outline: none;
+}
+
+.contact-form, #kontakt p {
+  width: 36rem;
+  max-width: 700px;
+  flex: 1 1 auto;
 }
 
 .contact-form button {
@@ -347,6 +381,11 @@ footer {
   background-color: #2e2e2d;
 }
 
+footer p {
+  margin-bottom: 0;
+  color: hsl(0, 0%, 55%);
+}
+
 /* --------------------
       Single pages
 ---------------------*/
@@ -355,6 +394,18 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 3rem 2rem 5rem;
+}
+
+/* Underline style is set under general styles above */
+.single-text h2 {
+  font-size: 1.75rem;
+  margin-top: 1.5rem;
+}
+
+.single-text h3 {
+  display: block;
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
 .single-text p {
@@ -383,6 +434,10 @@ footer {
     padding: 0 1rem;
   }
 
+  .hero-container {
+    padding-bottom: 10rem;
+  }
+
   .hero-content {
     align-items: flex-start;
     text-align: left;
@@ -391,48 +446,14 @@ footer {
   .hero-image img {
     display: block;
     position: absolute;
-    right: 0;
+    right: 1rem;
     bottom: 1rem;
     width: 442.5px;
     height: 288px;
   }
 
-  .content-row {
-    flex-direction: row;
-  }
-
   .card {
-    margin-bottom: 0;
-  }
-
-  .single-page {
-    padding: 3rem 1rem 5rem;
-  }
-}
-
-@media screen and (width: 768px) and (min-height: 900px) {
-  .hero-container {
-    height: 60vh;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-
-  .hero-image img {
-    right: 2rem;
-    bottom: 4rem;
-  }
-
-  .contact-row {
-    flex-direction: row;
-  }
-
-  .contact-form, #kontakt p {
-    width: 64%;
-    margin-right: auto;
+    margin: 0 1rem;
   }
 
   .form-row {
@@ -445,17 +466,32 @@ footer {
     padding: 0 1rem;
   }
 
-  .contact-info {
-    margin-top: 1.5rem;
-    width: 25%;
-  }
-
   .single-page {
     padding: 3rem 0 5rem 1rem;
   }
 
   .single-text {
     max-width: 36em;
+  }
+}
+
+@media screen and (width: 768px) and (min-height: 900px) {
+  .hero-container {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  .hero-container {
+    padding-bottom: 5rem;
+  }
+
+  .contact-info {
+    margin-top: 1.5rem;
   }
 
   .single-pattern-container {
@@ -487,6 +523,8 @@ footer {
   .hero-image img {
     width: 531px;
     height: 346.2px;
+    right: calc((100% - 1140px) / 3);
+    bottom: 2rem;
   }
 
   .single-pattern {
@@ -494,20 +532,14 @@ footer {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .hero-image img {
-    right: 6rem;
-  }
-}
-
 @media screen and (min-width: 1920px) {
+  .hero-container {
+    padding-bottom: 5rem;
+  }
+
   .hero-image img {
-    /* width: 796.5px;
-    height: 518.4px; */
     width: 663.75px;
     height: 432px;
-    right: 10rem;
-    bottom: 8rem;
   }
 }
 
