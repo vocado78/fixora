@@ -166,9 +166,10 @@ a {
         Hero
 ---------------------*/
 .hero-container {
+  display: flex;
+  align-items: center;
   height: 80vh;
   position: relative;
-  padding-top: 1rem;
 }
 
 .hero-container h1 {
@@ -433,6 +434,10 @@ footer p {
     padding: 0 1rem;
   }
 
+  .hero-container {
+    padding-bottom: 10rem;
+  }
+
   .hero-content {
     align-items: flex-start;
     text-align: left;
@@ -441,7 +446,7 @@ footer p {
   .hero-image img {
     display: block;
     position: absolute;
-    right: 0;
+    right: 1rem;
     bottom: 1rem;
     width: 442.5px;
     height: 288px;
@@ -472,7 +477,7 @@ footer p {
 
 @media screen and (width: 768px) and (min-height: 900px) {
   .hero-container {
-    height: 60vh;
+    height: 70vh;
   }
 }
 
@@ -481,9 +486,8 @@ footer p {
     width: 970px;
   }
 
-  .hero-image img {
-    right: 2rem;
-    bottom: 4rem;
+  .hero-container {
+    padding-bottom: 5rem;
   }
 
   .contact-info {
@@ -519,6 +523,8 @@ footer p {
   .hero-image img {
     width: 531px;
     height: 346.2px;
+    right: calc((100% - 1140px) / 3);
+    bottom: 2rem;
   }
 
   .single-pattern {
@@ -526,20 +532,14 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .hero-image img {
-    right: 6rem;
-  }
-}
-
 @media screen and (min-width: 1920px) {
+  .hero-container {
+    padding-bottom: 5rem;
+  }
+
   .hero-image img {
-    /* width: 796.5px;
-    height: 518.4px; */
     width: 663.75px;
     height: 432px;
-    right: 10rem;
-    bottom: 8rem;
   }
 }
 
