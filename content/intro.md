@@ -1,5 +1,5 @@
 +++
-title = "Intro"
+title = "Fixora- den lilla säljbyrån med den stora passionen"
 +++
 
 {{< intro-paragraf title="Vad Fixora är" >}}
