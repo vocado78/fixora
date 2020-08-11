@@ -1,4 +1,4 @@
-+++ Den lilla säljbyrån med den stora passionen"
++++ Den lilla konsultbyrån med den stora passionen"
 +++
 
 {{< intro-paragraf title="Vad Fixora är" >}}
