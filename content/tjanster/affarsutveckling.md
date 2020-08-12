@@ -1,10 +1,10 @@
 +++
 title = "Affärsutveckling"
 +++
-Hur gör ni och hur ofta gör ni det?
+Hur gör ni?
 På det stora hela, vet ni säkert till viss del vad ni måste göra – kommunicera i olika kanaler, träffa folk, ställa frågor för behovsanalys och på alla sätt visa att er produkt eller tjänst är värd att satsa på. Hur ska just ni prioritera mellan säljsamtal, kundbesök och offerter för att det ska bli rätt för er? 
 
-Tillsammans lägger vi grunden för en långsiktigt vinnande affär. Vi genomlyser de strukturer ni arbetar efter idag och ser vad som behöver utvecklas för en framgångsrik säljprocess. Inom en effektiv sådan måste ni kunna mäta era resultat och utifrån den kunskapen skapa fungerande flexibla säljstrategier. Gör ni inte det riskerar ni att prioritera fel och satsa på kunder som inte ger tillräckligt med utväxling över tid.
+Tillsammans lägger vi grunden för en långsiktigt vinnande affär. Vi genomlyser de strukturer ni arbetar efter idag och ser vad som behöver utvecklas för en framgångsrik säljprocess. Inom en effektiv säljprocess måste ni kunna mäta era resultat och utifrån den kunskapen skapa fungerande flexibla säljstrategier. Gör ni inte det riskerar ni att prioritera fel och satsa på kunder som inte ger tillräckligt med utväxling över tid.
 
 Jag hjälper er med effektiva säljprocesser och strategier genom att:
 
