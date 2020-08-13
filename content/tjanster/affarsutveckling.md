@@ -1,6 +1,7 @@
 +++
 title = "Affärsutveckling"
 +++
+
 Hur gör ni?
 På det stora hela, vet ni säkert till viss del vad ni måste göra – kommunicera i olika kanaler, träffa folk, ställa frågor för behovsanalys och på alla sätt visa att er produkt eller tjänst är värd att satsa på. Hur ska just ni prioritera mellan säljsamtal, kundbesök och offerter för att det ska bli rätt för er? 
 
@@ -8,18 +9,16 @@ Tillsammans lägger vi grunden för en långsiktigt vinnande affär. Vi genomlys
 
 Jag hjälper er med effektiva säljprocesser och strategier genom att:
 
-•	Tillsammans med er kartlägga marknaden och era kunder.
-•	Sätta en struktur för ert säljarbete som bygger på helhetssyn och den gemensamma kompetensen.
-•	Finna en naturlig uppföljning och återkoppling med kund – ett avgörande moment.
-•	Arbeta långsiktigt – att sälja idag tar ofta tid. 
-•	Tydliggöra ert erbjudande.
-•	Analysera vilken kund som är ideal för just er.
-•	Planera in och avsätta regelbunden tid för säljaktiviteter.
-•	Stärka säljkulturen inom företaget, den bör genomsyra allt som görs. 
-•	Följa upp aktiviteter – utan uppföljning av aktiviteter rinner de ofta ut i sanden
-•	Etablera en strategi som går i linje med er värdeproposition. Utan en sådan saknar sälj övertygelse.
-
-
+* Tillsammans med er kartlägga marknaden och era kunder.
+* Sätta en struktur för ert säljarbete som bygger på helhetssyn och den gemensamma kompetensen.
+* Finna en naturlig uppföljning och återkoppling med kund – ett avgörande moment.
+* Arbeta långsiktigt – att sälja idag tar ofta tid.
+* Tydliggöra ert erbjudande.
+* Analysera vilken kund som är ideal för just er.
+* Planera in och avsätta regelbunden tid för säljaktiviteter.
+* Stärka säljkulturen inom företaget, den bör genomsyra allt som görs.
+* Följa upp aktiviteter – utan uppföljning av aktiviteter rinner de ofta ut i sanden.
+* Etablera en strategi som går i linje med er värdeproposition. Utan en sådan saknar sälj övertygelse.
 
 ## Det här är en underrubrik
 ### Underrubrik till underrubriken 1

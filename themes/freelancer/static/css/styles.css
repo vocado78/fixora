@@ -47,10 +47,6 @@ p {
   margin-bottom: 1.5rem;
 }
 
-ul {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -151,6 +147,7 @@ a {
 .menu {
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 .menu-item {
@@ -363,6 +360,7 @@ input:focus, textarea:focus {
   justify-content: space-between;
   margin-top: 2.5rem;
   height: 8rem;
+  list-style-type: none;
 }
 
 .contact-item {
@@ -394,6 +392,10 @@ footer p {
   justify-content: space-between;
   align-items: flex-start;
   padding: 3rem 2rem 5rem;
+}
+
+.single-page ul {
+  padding-left: 15px;
 }
 
 /* Underline style is set under general styles above */
